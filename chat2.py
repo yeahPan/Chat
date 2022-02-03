@@ -1,7 +1,3 @@
-from fileinput import filename
-from mailbox import linesep
-from pdb import line_prefix
-
 #讀出檔案
 def read_file(filename):
     lines = []
@@ -50,12 +46,10 @@ def convert(lines):
     print('Viki傳了', viki_image_count, '張照片')
 
 
-
-            
+         
 def main():
     lines = read_file('LINE-Viki.txt')
-    convert(lines)
-#    write_file('output.txt', lines)
+    lines = convert(lines)
 
 
 main()
