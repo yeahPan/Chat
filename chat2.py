@@ -6,6 +6,7 @@ def read_file(filename):
             lines.append(line.strip())
     return lines
 
+
 #轉換(計算)
 def convert(lines):
     allen_word_count = 0
@@ -44,7 +45,6 @@ def convert(lines):
     print('Viki講了', viki_word_count, '個字')
     print('Viki傳了', viki_sticker_count, '個貼圖')
     print('Viki傳了', viki_image_count, '張照片')
-
 
          
 def main():
